@@ -15,13 +15,14 @@ User-friendly ordering on WhatsApp, Sell directly to your costumer today, with 0
 
 ## Screenshots.
 
-![Home Page](https://imgur.com/XqvOdYk)
-![Shop Page](https://imgur.com/mx2qCGO)
-![Adding Shop AdminPage](https://imgur.com/3bjnqWL)
-![Login Page](https://imgur.com/7KCsKDE)
-![Register Page](https://imgur.com/xaIvJJJ)
-![Marketplace Page](https://imgur.com/9B86zHu)
-![My cart Page](https://imgur.com/jEC4eFG)
+![Home Page](https://i.imgur.com/XqvOdYk.png)
+![Shop Page](https://i.imgur.com/mx2qCGO.png)
+![Adding Shop AdminPage](https://i.imgur.com/3bjnqWL.png)
+![Login Page](https://i.imgur.com/7KCsKDE.png)
+![Register Page](https://i.imgur.com/xaIvJJJ.png)
+![Marketplace Page](https://i.imgur.com/9B86zHu.png)
+![My cart Page](https://i.imgur.com/jEC4eFG.png)
+
 
 And more
 
