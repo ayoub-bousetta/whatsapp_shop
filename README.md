@@ -24,13 +24,13 @@ User-friendly ordering on WhatsApp, Sell directly to your costumer today, with 0
 ![My cart Page](https://i.imgur.com/jEC4eFG.png)
 
 
-And more
+And more...Live version coming soon
 
 ## Main Technologies.
 
-⋅⋅* Laravel 8 and Inertiajs/Vue 3. 
-⋅⋅* Uppy for image uploading. 
-⋅⋅* Pusher for notifications. 
+* Laravel 8 and Inertiajs/Vue 3. 
+* Uppy for image uploading. 
+* Pusher for notifications. 
 
 ## Credits.
 
