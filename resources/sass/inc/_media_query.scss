@@ -1,0 +1,182 @@
+$bps:(
+    small:920px,
+    meduim:990px,
+
+);
+
+
+
+@mixin mq($key){
+
+    $size:map-get($bps,$key);
+
+    @media only screen and (max-width:$size) {
+        @content;
+        
+    }
+
+  
+
+
+}
+
+@mixin title($elm,$color,$size,$weight:''){
+
+
+    #{$elm}{
+
+        color:$color;
+        font-size: $size;
+        margin-bottom: 20px;
+       
+
+
+    }
+
+  
+
+
+}
+
+
+@mixin parag($elm,$color,$size,$weight:'',$marg:''){
+
+
+    #{$elm}{
+
+        color:$color;
+        font-size: $size;
+        font-weight: unquote($weight);
+        margin-bottom:unquote($marg) ;
+        display: block;
+
+    }
+
+  
+
+
+}
+
+
+@mixin btn_colorful($colortext,$fsize:"",$bgcolor:"") {
+
+    @if $bgcolor !="" {
+        background:$bgcolor;
+        box-shadow: 0 10px 20px 0 rgba($color: $bgcolor, $alpha: 0.3);
+    }@else{
+        background: transparent linear-gradient( 90deg, #1f938a, #492444);
+        box-shadow: 0 10px 20px 0 rgba($color: #009cab, $alpha: 0.3);
+    }
+    cursor: pointer;
+   
+  
+
+   
+    margin: unset;
+   border-radius: 150px;
+   padding: 10px 15px;
+
+   display: flex;
+  // max-width: 150px;
+   transition: all 80ms ease-in-out;
+   position: relative;
+   overflow: hidden;
+   align-items: center;
+   max-width: 150px;
+  width: 100%; 
+
+
+   span{
+     font-size: unquote($fsize); 
+     color: $colortext;
+     position: relative;
+     transition: all 800ms ease-in-out;
+     display: block;
+     margin:  0;
+
+   }
+   i{
+     //position: absolute;
+     //right:  -100%;
+     right:  -10%;  position: relative;
+      color: $colortext;    transition: all 300ms ease-in-out;
+   }
+
+   &:hover{
+     i{
+
+         right:  0%;
+       }
+       span{
+        
+       }
+   } 
+}
+
+
+
+@mixin rs-list-box($primaryColor:'',$black:'') {
+   
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 0;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    .list-item {
+      
+        margin: unset;
+
+        list-style: none;
+
+     
+
+
+        a{
+            position: relative;
+display: inline-flex;
+text-decoration: none;
+justify-content: center;
+align-items: center;
+
+
+transition-property: all;
+transition-duration: 100ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+cursor: pointer;
+box-sizing: border-box;
+background: transparent;
+border-radius: 50%;
+vertical-align: top;border: .0625rem solid #dfdfdf;
+background-color: transparent;
+padding: .3125rem;
+height: auto;
+
+
+&:hover{border: .0625rem solid  $primaryColor; 
+    svg{
+        fill: $primaryColor;
+        
+        
+        }
+}
+
+svg{
+fill:$black;
+
+
+}
+        }
+
+
+
+
+    }
+
+
+
+
+}

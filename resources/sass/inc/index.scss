@@ -1,0 +1,46 @@
+@use '_font' as *;
+@use '_media_query' as *;
+@import '_colors';
+@import '_comps';
+
+
+
+
+
+:root{
+
+
+      
+//fonts
+@each $screen-size,$fontSize in $type_scale {
+
+
+    
+
+
+
+   
+    @if $screen-size == meduim {
+        @each $size,$value in $fontSize {
+
+
+
+            --fs-#{$size}:#{$value};
+            
+        }
+    }@else{
+
+        @include mq(small){
+            @each $size,$value in $fontSize {
+                --fs-#{$size}:#{$value};
+            }
+
+
+        }
+
+
+    }
+
+}
+
+}

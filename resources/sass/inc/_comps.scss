@@ -1,0 +1,98 @@
+@use "sass:math";
+  .switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+    .slider {
+      position: relative;
+      display: inline-block;
+      height: $slider-height;
+      width: $slider-width;
+      border-radius: $slider-height;
+      cursor: pointer;
+      background: $slider-off-color;
+      transition: $transition;
+      
+      &:after {
+        background: $switch-off-color;
+        position: absolute;
+        left: -$switch-shift;
+        top: math.div($slider-height - $switch-height, 2);
+        display: block;
+        width: $switch-height;
+        height: $switch-width;
+        border-radius: 50%;
+        box-shadow: 0px 2px 2px rgba(#000, .2);
+        content: '';
+        transition: $transition;
+      }
+    }
+    
+    label {
+      margin-right: 7px;
+      font-size: var(--fs-16);
+      font-weight: 300;
+    }
+    
+    .input {
+      display: none;
+      
+      ~ .label {
+        margin-left: $slider-height;
+      }
+         
+      &:checked ~ .slider {
+        
+        &:after {
+          left: $slider-width - $switch-width + $switch-shift;
+        }
+      }
+    }
+    
+    .input:checked ~ .slider {
+      background: $slider-on-color;
+  
+      &:after {
+        background: $primary;
+      }
+    }
+  }
+
+
+
+
+
+
+
+  //errorMixing
+
+
+  @mixin messages($color,$textcolor:'') {
+
+
+    
+  list-style: none;
+  padding: 0;
+  li{
+      list-style: none;
+      margin-bottom: 10px;
+ 
+     
+      p{
+          background: $color;     padding: 10px;
+          @if $textcolor != "" {
+            color: $textcolor;
+          }@else{
+             color: $white;
+          }
+         
+          font-size: var(--fs-16);
+          
+
+      }
+  }
+
+    
+  }

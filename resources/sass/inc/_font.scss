@@ -1,0 +1,48 @@
+@use "sass:math";
+$fontSize:(
+small:16,
+meduim:18
+
+);
+
+$type_scale:(
+
+   
+small:(
+    org-px:map-get($fontSize,small)+px,
+    14:math.div(14,map-get($fontSize,small))+rem,
+    16:math.div(16,map-get($fontSize,small))+rem,
+    18:math.div(18,map-get($fontSize,small))+rem,
+    20:math.div(20,map-get($fontSize,small))+rem,
+    22:math.div(22,map-get($fontSize,small))+rem,
+    24:math.div(24,map-get($fontSize,small))+rem,
+    26:math.div(26,map-get($fontSize,small))+rem,
+    28:math.div(28,map-get($fontSize,small))+rem,
+),
+meduim:(
+    org-px:map-get($fontSize,meduim)+px,
+    12:math.div(12,map-get($fontSize,meduim))+rem,
+    14:math.div(14,map-get($fontSize,meduim))+rem,
+    16:math.div(16,map-get($fontSize,meduim))+rem,
+    18:math.div(18,map-get($fontSize,meduim))+rem,
+    20:math.div(20,map-get($fontSize,meduim))+rem,
+    22:math.div(22,map-get($fontSize,meduim))+rem,
+    23:math.div(23,map-get($fontSize,meduim))+rem,
+    24:math.div(24,map-get($fontSize,meduim))+rem,
+    25:math.div(25,map-get($fontSize,meduim))+rem,
+    30:math.div(30,map-get($fontSize,meduim))+rem,
+    32:math.div(32,map-get($fontSize,meduim))+rem,
+    34:math.div(34,map-get($fontSize,meduim))+rem,
+    36:math.div(36,map-get($fontSize,meduim))+rem,
+    38:math.div(38,map-get($fontSize,meduim))+rem,
+    40:math.div(40,map-get($fontSize,meduim))+rem,
+    50:math.div(50,map-get($fontSize,meduim))+rem,
+    70:math.div(70,map-get($fontSize,meduim))+rem,
+    80:math.div(80,map-get($fontSize,meduim))+rem,
+    90:math.div(90,map-get($fontSize,small))+rem,
+),
+
+
+
+
+)
